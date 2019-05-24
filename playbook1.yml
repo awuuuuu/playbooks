@@ -1,0 +1,6 @@
+- name: Playbook 1
+  hosts: all
+  tasks:
+    - name: Playbook 1
+      debug:
+        msg: "Hello World! {{Playbook}} " 
