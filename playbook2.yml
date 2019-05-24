@@ -3,7 +3,6 @@
   tasks:
     - name: Playbook 2
       shell: |
-        cd ~/
         mkdir playbook2
         touch playbook2.output
       become: true
