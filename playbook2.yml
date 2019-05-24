@@ -1,8 +1,6 @@
 - name: Playbook 2
   hosts: all
   tasks:
-    - name: Playbook 2
-      command:
-        argv:
-          - mkdir playbook2
-          - touch playbook2.output
+    - name: Hello Message
+      debug:
+        msg: "Hello World! {{ yourname }} "   
