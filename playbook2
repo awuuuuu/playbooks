@@ -1,0 +1,12 @@
+- name: Playbook 2
+  hosts: all
+  tasks:
+    - name: Playbook 2
+      shell: |
+        cd ~/
+        mkdir playbook2
+        touch playbook2.output
+      become: true
+      ignore_errors: yes    
+      debug:
+        msg: "Hello World! {{Playbook}} " 
